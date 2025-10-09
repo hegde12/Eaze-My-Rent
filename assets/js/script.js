@@ -31,9 +31,15 @@ for (let i = 0; i < navbarLinks.length; i++) { navElemArr.push(navbarLinks[i]); 
  */
 
 for (let i = 0; i < navElemArr.length; i++) {
+  if (!navElemArr[i]) continue; // safety guard
   navElemArr[i].addEventListener("click", function () {
     elemToggleFunc(navbar);
     elemToggleFunc(overlay);
+
+    // Accessibility attributes
+    const isActive = navbar.classList.contains('active');
+    if (navOpenBtn) navOpenBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    navbar.setAttribute('aria-hidden', isActive ? 'false' : 'true');
   });
 }
 
@@ -57,3 +63,29 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 400 ? header.classList.add("active")
     : header.classList.remove("active");
 }); 
+
+/**
+ * Toggle nearby locations list
+ */
+function toggleNearby(event) {
+  event.preventDefault();
+  const button = event.currentTarget;
+  const targetId = button.getAttribute('aria-controls');
+  const targetList = document.getElementById(targetId);
+  const chevronIcon = button.querySelector('ion-icon[name*="chevron"]');
+  
+  if (!targetList) return;
+  
+  // Toggle visibility
+  const isHidden = targetList.hasAttribute('hidden');
+  
+  if (isHidden) {
+    targetList.removeAttribute('hidden');
+    button.setAttribute('aria-expanded', 'true');
+    if (chevronIcon) chevronIcon.setAttribute('name', 'chevron-up-outline');
+  } else {
+    targetList.setAttribute('hidden', '');
+    button.setAttribute('aria-expanded', 'false');
+    if (chevronIcon) chevronIcon.setAttribute('name', 'chevron-down-outline');
+  }
+}

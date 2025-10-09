@@ -280,7 +280,7 @@ button, a { transition: var(--transition); }
 
 .header-top {
   background: var(--prussian-blue);
-  padding-block: 15px;
+  padding-block: 10px;
 }
 
 .header-top .container,
@@ -341,6 +341,51 @@ button, a { transition: var(--transition); }
 .header-bottom {
   background: var(--white);
   padding-block: 25px;
+}
+
+/* Make header container flex on all sizes so hamburger can align right */
+.header-bottom > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Mobile nav toggle button (hamburger) */
+.nav-toggle-btn, .nav-close-btn {
+  background: var(--white);
+  border: 1px solid var(--cultured-1);
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-2);
+  border-radius: 4px;
+  color: var(--dark-jungle-green);
+  transition: var(--transition);
+  z-index: 6;
+}
+
+.nav-toggle-btn:hover, .nav-close-btn:hover { color: var(--orange-soda); }
+
+.nav-close-btn { position: relative; }
+
+/* Ensure navbar list vertical on small screens */
+.navbar-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; }
+
+/* Hide close button by default; shown inside off-canvas */
+.nav-close-btn { display: flex; }
+
+@media (min-width: 992px) {
+  /* Hide mobile toggle buttons on desktop */
+  .nav-toggle-btn, .nav-close-btn { display: none !important; }
+  /* Desktop navbar inline */
+  .navbar { all: unset; }
+  .navbar-bottom { all: unset; }
+  .navbar-list { flex-direction: row; gap: 30px; }
+  .navbar-link { text-transform: capitalize; }
 }
 
 .header-bottom .logo img { margin-inline: 10px; }
@@ -709,8 +754,27 @@ button, a { transition: var(--transition); }
 
 .property-card .card-banner {
   position: relative;
-  aspect-ratio: 2 / 1.5;
+  /* mobile-first: slightly taller banner for phones */
+  aspect-ratio: 22 / 13;
   overflow: hidden;
+  width: 100%;
+  max-height: 420px;
+}
+
+/* tablet: wider banner (landscape) */
+@media (min-width: 600px) {
+  .property-card .card-banner {
+    aspect-ratio: 16 / 9;
+    max-height: 520px;
+  }
+}
+
+/* desktop: more balanced ratio for larger layouts */
+@media (min-width: 992px) {
+  .property-card .card-banner {
+    aspect-ratio: 1.70 / 1;
+    max-height: 480px;
+  }
 }
 
 .property-card .card-banner a { height: 100%; }
@@ -1096,7 +1160,7 @@ button, a { transition: var(--transition); }
 .footer {
   background: var(--raisin-black-1);
   color: var(--white);
-  margin-bottom: 68px;
+  margin-bottom: 50px;
 }
 
 .footer .container { padding-inline: 30px; }
@@ -1104,8 +1168,8 @@ button, a { transition: var(--transition); }
 .footer a { color: inherit; }
 
 .footer-top {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-brand { margin-bottom: 70px; }
@@ -1629,28 +1693,26 @@ button, a { transition: var(--transition); }
     text-transform: capitalize;
   }
 
-  .header { padding-bottom: 114px; }
+  /* Static header: remove extra bottom padding & sticky transform */
+  .header { padding-bottom: 0; }
 
   .header-bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    left: auto;
+    bottom: auto;
     width: 100%;
   }
 
+  /* Neutralize scroll-activated movement */
   .header.active .header-bottom {
-    position: fixed;
-    bottom: auto;
-    top: -94px;
-    padding-block: 20px;
-    box-shadow: 0 10px 50px hsla(237, 71%, 52%, 0.2);
-    animation: slideDown 0.25s ease-out forwards;
+    position: relative;
+    top: auto;
+    box-shadow: none;
+    animation: none;
   }
 
-  @keyframes slideDown {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(100%); }
-  }
+  /* Remove unused keyframes (kept commented for possible revert) */
+  /* @keyframes slideDown { 0% { transform: translateY(0);} 100% { transform: translateY(100%);} } */
 
 
 
