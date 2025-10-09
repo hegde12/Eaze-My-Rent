@@ -32,110 +32,93 @@
     <!-- HEADER -->
     <header class="header" data-header>
         <div class="overlay" data-overlay></div>
-        <div class="header-top">
+        <div class="header-top" style="position: relative; z-index: 5;">
             <div class="container">
                 <ul class="header-top-list">
                     <li>
-                        <a href="mailto:info@eazemyrent.com" class="header-top-link">
+                        <a href="mailto:eazemyrentbng@gmail.com" class="header-top-link">
                             <ion-icon name="mail-outline"></ion-icon>
-                            <span>info@eazemyrent.com</span>
+                            <span>eazemyrentbng@gmail.com</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#location" class="header-top-link" data-nav-link="location">
-                            <ion-icon name="location-outline"></ion-icon>
-                            <address>Maratahalli, Banglore </address>
+                        <a href="tel:7338282981" class="header-top-link">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <span>+91 7338282981</span>
                         </a>
                     </li>
                 </ul>
                 <div class="wrapper">
                     <ul class="header-top-social-list">
                         <li>
-                            <a href="#" class="header-top-social-link">
+                            <a href="#" class="social-link">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="header-top-social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
+                            <a href="https://x.com/eazemyrentbng" class="social-link">
+                                <!-- SVG for the X (Twitter) logo -->
+                                <svg width="12" height="12" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="120" height="120" fill="black" />
+                                    <path
+                                        d="M908.305 0H1098.6L690.305 521.685L1167 1227H808.5L517.5 813.5L185 1227H-5.5L429.5 661.5L-1 0H366.5L626.5 375.5L908.305 0ZM846.5 1105H946.5L308.5 114H201.5L846.5 1105Z"
+                                        fill="white" />
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="header-top-social-link">
+                            <a href="www.linkedin.com/in/" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCgFqOmubTkYf0I_3FUIYaqA" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/easemyrent/" class="social-link">
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a>
                         </li>
-                        <!--
-                        <li>
-                            <a href="#" class="header-top-social-link">
-                                <ion-icon name="logo-pinterest"></ion-icon>
-                            </a>
-                        </li>
-                        -->
+                       
                     </ul>
-                    <!--<button class="btn">Add Listing</button>-->
+                   
                 </div>
             </div>
         </div>
         <div class="header-bottom">
             <div class="container">
                 <div class="logo">
-                    <img src="./assets/images/Logo/logo new.jpg" alt="Homeverse logo" height="100px" width="auto">
+                    <img src="./assets/images/Logo/logo new.jpg" alt="Eazemyrent logo" style="display:block; max-height:85px; width:auto; object-fit:contain;">
                 </div>
-                <nav class="navbar" data-navbar>
+
+                <!-- Mobile menu open button (hidden on desktop via CSS) -->
+                <button class="nav-toggle-btn" data-nav-open-btn aria-label="Open Menu" aria-controls="primary-navigation" aria-expanded="false">
+                    <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <nav class="navbar" data-navbar id="primary-navigation" aria-hidden="true">
                     <div class="navbar-top">
-                        <a href="#" class="logo">
-                            <img src="./assets/images/logo.png" alt="Homeverse logo">
-                        </a>
+                        <div class="logo" style="display:flex; align-items:center; gap:.5rem;">
+                            <img src="./assets/images/Logo/logo new.jpg" alt="Eazemyrent logo" style="display:block; max-height:60px; width:auto; object-fit:contain;">
+                        </div>
                         <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-                            <ion-icon name="close-outline"></ion-icon>
+                            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
                         </button>
                     </div>
                     <div class="navbar-bottom">
                         <ul class="navbar-list">
-                            <li>
-                                <a href="#home" class="navbar-link" data-nav-link>Home</a>
-                            </li>
-                            <li>
-                                <a href="#about" class="navbar-link" data-nav-link>About</a>
-                            </li>
-                            <li>
-                                <a href="#service" class="navbar-link" data-nav-link>Service</a>
-                            </li>
-                            <li>
-                                <a href="#property" class="navbar-link" data-nav-link>Property</a>
-                            </li>
-                            <!--
-                            <li>
-                                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                            </li>
-                            -->
-                            <li>
-                                <a href="https://docs.google.com/forms/d/1aDqshLp5yEmMyEoaX5X4qCDXJG4C1jXtDwIkfjxGaNU/edit" class="navbar-link" data-nav-link>Own a Property?</a>
-                            </li>
+                            <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+                            <li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
+                            <li><a href="#service" class="navbar-link" data-nav-link>Service</a></li>
+                            <li><a href="#property" class="navbar-link" data-nav-link>Property</a></li>
+                            <!--<li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>-->
+                            <li><a href="https://docs.google.com/forms/d/1aDqshLp5yEmMyEoaX5X4qCDXJG4C1jXtDwIkfjxGaNU/edit" class="navbar-link" data-nav-link>Own a Property?</a></li>
                         </ul>
                     </div>
                 </nav>
-                <!--
-                <div class="header-bottom-actions">
-                    <button class="header-bottom-actions-btn" aria-label="Search">
-                        <ion-icon name="search-outline"></ion-icon>
-                        <span>Search</span>
-                    </button>
-                    <button class="header-bottom-actions-btn" aria-label="Profile">
-                        <ion-icon name="person-outline"></ion-icon>
-                        <span>Profile</span>
-                    </button>
-                    <button class="header-bottom-actions-btn" aria-label="Cart">
-                        <ion-icon name="cart-outline"></ion-icon>
-                        <span>Cart</span>
-                    </button>
-                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-                        <ion-icon name="menu-outline"></ion-icon>
-                        <span>Menu</span>
-                    </button>
-                </div>
-                -->
+                
             </div>
         </div>
     </header>
@@ -148,14 +131,13 @@
                     <div class="hero-content">
                         <p class="hero-subtitle">
                             <ion-icon name="home"></ion-icon>
-                            <span>Real Estate Agency</span>
+                            <span>HOME</span>
                         </p>
                         <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
                         <p class="callout">
-                            Our goal is to deliver hassle-free property management solutions built on trust, performance, and transparency. Whether you own a single-family home or a portfolio of rental units, we make ownership effortless. We do Marketing, maintenance, rent collection, transperant reporting, tenant placement and legal compliance
-                            <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.-->
-                        </p>
-                        <!--<button class="btn">Make An Enquiry</button>-->
+                            At Eazemyrent, we believe that renting a home should be simple, stress-free, and supportive. From your first tour to the day you move in-and every day after-we're here to make your living experience as comfortable as possible.
+                            
+                       
                     </div>
                     <figure class="hero-banner">
                         <img src="./assets/images/Building/Building.png" alt="Modern house model" class="w-100">
@@ -168,336 +150,592 @@
                 <div class="container">
                     <figure class="about-banner">
                         <img src="./assets/images/About/about-banner-1.png" alt="House interior">
-                        <!--<img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">-->
+                       
                     </figure>
                     <div class="about-content">
-                        <p class="section-subtitle">About Us</p>
+                        <p class="section-subtitle">ABOUT US</p>
                         <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
                         <p class="about-text">
                             Over 50 people work for us in more than 70 area all over the banglore,
                             combined with
                             specialist services
                         </p>
-                        <!--
-                        <ul class="about-list">
-                            <li class="about-item">
-                                <div class="about-item-icon">
-                                    <ion-icon name="home-outline"></ion-icon>
-                                </div>
-                                <p class="about-item-text">Smart Home Design</p>
-                            </li>
-                            <li class="about-item">
-                                <div class="about-item-icon">
-                                    <ion-icon name="leaf-outline"></ion-icon>
-                                </div>
-                                <p class="about-item-text">Beautiful Scene Around</p>
-                            </li>
-                            <li class="about-item">
-                                <div class="about-item-icon">
-                                    <ion-icon name="wine-outline"></ion-icon>
-                                </div>
-                                <p class="about-item-text">Exceptional Lifestyle</p>
-                            </li>
-                            <li class="about-item">
-                                <div class="about-item-icon">
-                                    <ion-icon name="shield-checkmark-outline"></ion-icon>
-                                </div>
-                                <p class="about-item-text">Complete 24/7 Security</p>
-                            </li>
-                        </ul>
-                        -->
+                        
                         <p class="callout">
-                            At Eazemyrent, we believe that renting a home should be simple, stress-free, and supportive. From your first tour to the day you move in-and every day after-we're here to make your living experience as comfortable as possible.
+                            Our goal is to deliver hassle-free property management solutions built on trust, performance, and transparency. Whether
+                            you own a single-family home or a portfolio of rental units, we make ownership effortless. We do Marketing, maintenance,
+                            rent collection, transparent reporting, tenant placement and legal compliance.
                         </p>
-                        <!--<a href="#service" class="btn">Our Services</a>-->
+                       
                     </div>
                 </div>
             </section>
 
             <!-- SERVICE -->
-            <section class="service" id="service">
-                <div class="container">
-                    <p class="section-subtitle">Our Services</p>
-                    <h2 class="h2 section-title">WHY US?</h2>
-                    <ul class="service-list">
-                        <!--<li>
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/service-1.png" alt="Service icon">
-                                </div>
-                                <h3 class="h3 card-title">
-                                    <a href="#">Buy a home</a>
-                                </h3>
-                                <p class="card-text">
-                                    over 100 homes for sale available on the website, we can match you with a house you will want
-                                    to call home.
-                                </p>
-                                <a href="#" class="card-link">
-                                    <span>Find A Home</span>
-                                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </a>
+        <section class="service" id="service">
+            <div class="container">
+                <p class="section-subtitle">Our Services</p>
+                <h2 class="h2 section-title">WHY US?</h2>
+                <ul class="service-list">
+                    
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon" style="position: relative;">
+                                <ion-icon name="cash-outline" style="font-size: 32px;"></ion-icon>
+                                <ion-icon name="close-circle"
+                                    style="color: red; font-size: 24px; position: absolute; top: 0; right: 0;"></ion-icon>
                             </div>
-                        </li>-->
-                        <li>
-                            <div class="service-card">
-                                <div class="card-icon" style="position: relative;">
-                                    <ion-icon name="cash-outline" style="font-size: 32px;"></ion-icon>
-                                    <ion-icon name="close-circle" style="color: red; font-size: 24px; position: absolute; top: 0; right: 0;"></ion-icon>
-                                </div>
-                                <span>NO BROKERGAE</span>
-                                <!--
-                                <div class="card-icon">
-                                    <img src="./assets/images/Service/service-2.png" alt="Service icon">
-                                </div>
-                                <h3 class="h3 card-title">
-                                    <a href="#property">Rent a home</a>
-                                </h3>
-                                <p class="card-text">
-                                    over 100+ homes for rent available on the website, we can match you with a house you will want
-                                    to call home.
-                                </p>
-                                <a href="#property" class="card-link">
-                                    <span>Find A Home</span>
-                                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </a>
-                                -->
+                            <span>NO BROKERGAE</span>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon" style="position: relative;">
+                                <ion-icon name="checkmark-done-circle-outline" style="font-size: 32px;"></ion-icon>
                             </div>
-                        </li>
-                        <li>
-                            <div class="service-card">
-                                <div class="card-icon" style="position: relative;">
-                                    <ion-icon name="checkmark-done-circle-outline" style="font-size: 32px;"></ion-icon>
-                                </div>
-                                <span>HASSEL FREE RENTALS</span>
-                                <!--
-                                <div class="card-icon">
-                                    <img src="./assets/images/service-3.png" alt="Service icon">
-                                </div>
-                                <h3 class="h3 card-title">
-                                    <a href="#">Sell a home</a>
-                                </h3>
-                                <p class="card-text">
-                                    over 100+ homes for sale available on the website, we can match you with a house you will want
-                                    to call home.
-                                </p>
-                                <a href="#" class="card-link">
-                                    <span>Find A Home</span>
-                                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </a>
-                                -->
+                            <span>HASSEL FREE RENTALS</span>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon" style="position: relative;">
+                                <ion-icon name="location-outline" style="font-size: 32px;"></ion-icon>
                             </div>
-                        </li>
-                        <li>
-                            <div class="service-card">
-                                <div class="card-icon" style="position: relative;">
-                                    <ion-icon name="location-outline" style="font-size: 32px;"></ion-icon>
-                                </div>
-                                <span>PRIME LOCATION </span>
+                            <span>PRIME LOCATION </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-card">
+                            <div class="card-icon" style="position: relative;">
+                                <ion-icon name="star-outline" style="font-size: 32px;"></ion-icon>
                             </div>
-                        </li>
-                        <li>
-                            <div class="service-card">
-                                <div class="card-icon" style="position: relative;">
-                                    <ion-icon name="star-outline" style="font-size: 32px;"></ion-icon>
-                                </div>
-                                <span>BEST AMENITIES </span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                            <span>BEST AMENITIES </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
             <!-- PROPERTY -->
             <section class="property" id="property">
                 <div class="container">
                     <p class="section-subtitle">Properties</p>
-                    <h2 class="h2 section-title">Featured Listings</h2>
+                    <h2 class="h2 section-title">DREAM HOMES</h2>
                     <ul class="property-list has-scrollbar">
                         <li>
                             <div class="property-card">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/Properties/property-1.jpg" alt="New Apartment Nice View" class="w-100">
-                                    <div class="card-badge green">For Rent</div>
-                                    <!--div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Bellandur, Banglore</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                                            <span>4</span>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                                            <span>2</span>
-                                        </button>
-                                    </div>-->
-                                </figure>
-                                <div class="card-content">
-                                    <div class="card-price">
-                                        <strong>2BHK Furnished</strong>
-                                    </div>
-                                    <h3 class="h3 card-title">
-                                        New Apartment Nice
-                                    </h3>
-                                    <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Benguluru. Newly Constructed.
-                                    </p>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                                            <ion-icon name="bed-outline"></ion-icon>
-                                            <span>Bedrooms</span>
-                                        </li>
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                                            <ion-icon name="man-outline"></ion-icon>
-                                            <span>Bathrooms</span>
-                                        </li>
-                                        <li class="card-item">
-                                            <strong>1300</strong>
-                                            <ion-icon name="square-outline"></ion-icon>
-                                            <span>Square Ft</span>
-                                        </li>
-                                    </ul>
+                            <figure class="card-banner">
+                                <div class="slider" id="2bhk-fur-slider">
+                                    <img src="./assets/images/Properties/2BHK-fur/Bedroom-1.jpeg" class="slide clickable-slide active"
+                                        alt="BTM Photo 1" onclick="toggleDesc2BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                    <img src="./assets/images/Properties/2BHK-fur/Bedroom-2.jpeg" class="slide clickable-slide" alt="BTM Photo 2"
+                                        onclick="toggleDesc2BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                    <img src="./assets/images/Properties/2BHK-fur/kitchen.jpeg" class="slide clickable-slide" alt="BTM Photo 3"
+                                        onclick="toggleDesc2BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                    <img src="./assets/images/Properties/2BHK-fur/Hall.jpeg" class="slide clickable-slide" alt="BTM Photo 4"
+                                        onclick="toggleDesc2BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                    <img src="./assets/images/Properties/2BHK-fur/Washroom.jpeg" class="slide clickable-slide" alt="BTM Photo 5"
+                                        onclick="toggleDesc2BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/2BHK-fur/Balcony.jpeg" class="slide clickable-slide" alt="BTM Photo 6"
+                                            onclick="toggleDesc2BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                    <style>
+                                        .clickable-slide {
+                                            cursor: pointer;
+                                            transition: box-shadow 0.2s;
+                                        }
+                        
+                                        .clickable-slide:hover {
+                                            box-shadow: 0 0 0 3px #007bff;
+                                            opacity: 0.92;
+                                        }
+                                    </style>
+                                    <script>
+                                        function toggleDesc2BhkFur() {
+                                            var desc = document.getElementById('desc-2bhk-fur');
+                                            desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
+                                        }
+                                    </script>
+                                    <button class="slider-btn prev" onclick="plusSlides(-1, '2bhk-fur-slider')">&#10094;</button>
+                                    <button class="slider-btn next" onclick="plusSlides(1, '2bhk-fur-slider')">&#10095;</button>
                                 </div>
-                                <div class="card-footer">
-                                    <!--
-                                    <div class="card-author">
-                                        <figure class="author-avatar">
-                                            <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                                        </figure>
-                                        <div>
-                                            <p class="author-name">
-                                                <a href="#">Akash</a>
-                                            </p>
-                                            <p class="author-title">Estate Agents</p>
-                                        </div>
-                                    </div>
-                                    -->
-                                    <!--
-                                    <div class="card-footer-actions">
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="resize-outline"></ion-icon>
-                                        </button>
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="add-circle-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                    -->
+                                <div class="card-badge green">For Rent</div>
+                               
+                            </figure>
+                            <ul class="card-list" style="display: flex; justify-content: center; gap: 24px; padding: 0; margin-top: 20px;">
+                                <li class="card-item" style="text-align: center;">
+                                    <strong>2</strong>
+                                    <ion-icon name="bed-outline"></ion-icon>
+                                    <span>Bedrooms</span>
+                                </li>
+                                <li class="card-item" style="text-align: center;">
+                                    <strong>2</strong>
+                                    <ion-icon name="man-outline"></ion-icon>
+                                    <span>Bathrooms</span>
+                                </li>
+                                <li class="card-item" style="text-align: center;">
+                                    <strong>1200</strong>
+                                    <ion-icon name="square-outline"></ion-icon>
+                                    <span>Square Ft</span>
+                                </li>
+                            </ul>
+                            <div class="card-content" style="text-align: center;">
+                                <div class="card-price">
+                                    <strong>2BHK Furnished</strong>
                                 </div>
+                                <h3 class="h3 card-title">
+                                    Nice New Apartment
+                                </h3>
+                                <p class="card-text" id="desc-2bhk-fur" style="display: none; text-align: center;">
+                                    <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
+                                    Location: Prime area on Seegehalli, Kadugodi.<br>
+                                    Size: Spacious 2BHK with well-ventilated rooms.<br>
+                                    Furniture & Amenities:<br>
+                                    TV, Sofa & center table.<br>
+                                    Double bed with mattress.<br>
+                                    Wardrobe & storage cabinets.<br>
+                                    Modular kitchen with refrigerator and stove.<br>
+                                    Common Washing machine & geyser.<br>
+                                    
+                                    Balcony: Yes, with a scenic view.<br>
+                                    Parking: Available.<br>
+                                    Security: 24/7 CCTV & security guards.<br>
+                                    Power Backup: Yes.<br>
+                                    </span>
+                                    <button
+                                        style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                        onclick="window.location.href='tel:9876543210'">
+                                        BOOK NOW
+                                    </button>
+                                </p>
+                                <script>
+                                    // Show description when any image in the slider is clicked
+                                    document.querySelectorAll('#2bhk-fur-slider img').forEach(function (img) {
+                                        img.addEventListener('click', function () {
+                                            document.getElementById('desc-2bhk-fur').style.display = 'block';
+                                        });
+                                    });
+                                </script>
+                        
                             </div>
+                            <div class="card-footer">
+                                <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-2bhk-fur" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                                    <span>Nearby Locations</span>
+                                    <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
+                                </button>
+
+                                <ul id="nearby-2bhk-fur" class="nearby-list" hidden style="list-style:none;padding:8px 12px;margin:8px 0 0 0;border-radius:8px;background:#f8f9fb;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+                                    <!-- EAT OUTS -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('eatouts-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>EAT OUTS</strong>
+                                        </button>
+                                        <ul id="eatouts-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Lemon Leaf</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Lara da Dhaba</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Punjab Beat</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Nandhana Palace</strong> <small style="color:#666;margin-left:.5rem;">(1.8 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Kapoor Cafe, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Imperio Restaurant</strong> <small style="color:#666;margin-left:.5rem;">(1.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Udupi Cafe</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Biriyani Zest</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Tall Oaks</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Prime Golf</strong> <small style="color:#666;margin-left:.5rem;">(4.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Pump House, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(1.6 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- HOSPITALS -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('hospitals-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>HOSPITALS</strong>
+                                        </button>
+                                        <ul id="hospitals-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Motherhood Clinic, Kanmanagala</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>RXDX Clinic, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.9 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Miracle Women & Children's Hospital</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Manipal Hospital, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(7.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Aster Whitefield Hospital</strong> <small style="color:#666;margin-left:.5rem;">(7.7 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- MALL -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('mall-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>MALL</strong>
+                                        </button>
+                                        <ul id="mall-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Rolls Hyper Market</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>SBR Horizon</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Green Field Hub</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Orion Uptown Mall</strong> <small style="color:#666;margin-left:.5rem;">(6.2 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Nexus Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(6.6 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- METRO STATION -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('metro-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>METRO STATION</strong>
+                                        </button>
+                                        <ul id="metro-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Whitefield / Kadugodi Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Hopefarm / Chandsandra Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(3.8 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Kadugodi Tree Park Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- BUSINESS CENTRES -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('business-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>BUSINESS CENTRES</strong>
+                                        </button>
+                                        <ul id="business-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Sumadhura Capital Towers</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>ITPB</strong> <small style="color:#666;margin-left:.5rem;">(5.8 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Sigma Soft Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.8 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>First Technology Space</strong> <small style="color:#666;margin-left:.5rem;">(6.7 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Prestige Featherlite Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.9 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- LANDMARK -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('landmark-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>LANDMARK</strong>
+                                        </button>
+                                        <ul id="landmark-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>GJM Sai Green Garden Layout (GJM guest house)</strong></li>
+                                            <li style="padding:4px 0;"><strong>Next to The Villagio</strong></li>
+                                            <li style="padding:4px 0;"><strong>HP Petroleum Corporation Ltd</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- WORSHIP -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('worship-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>WORSHIP</strong>
+                                        </button>
+                                        <ul id="worship-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Hanuman Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Sri Venugopala Swamy / Sri Veeranjaneya Swamy Temple</strong> <small style="color:#666;margin-left:.5rem;">(0.30 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Abayahastha Anjaneya Temple</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- AREA -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('area-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>AREA</strong>
+                                        </button>
+                                        <ul id="area-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Belathur</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(3.4 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Kanmangala</strong> <small style="color:#666;margin-left:.5rem;">(2.6 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Chikkabanahalli</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Hope Farm Bus Stop</strong> <small style="color:#666;margin-left:.5rem;">(4.1 km)</small></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- EDUCATION -->
+                                    <li style="padding:6px 0;">
+                                        <button onclick="toggleCategory('education-2bhk-fur', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                            <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                            <strong>EDUCATION</strong>
+                                        </button>
+                                        <ul id="education-2bhk-fur" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                            <li style="padding:4px 0;"><strong>Crescendo International Preschool</strong> <small style="color:#666;margin-left:.5rem;">(1.5 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Chrysalis High School, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Pragathi ORCHIDS The International School</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>Pragathi PU College</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                            <li style="padding:4px 0;"><strong>MVJ College of Engineering</strong> <small style="color:#666;margin-left:.5rem;">(4.9 km)</small></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         </li>
                         <li>
                             <div class="property-card">
                                 <figure class="card-banner">
-                                    <img src="./assets/images/Properties/property-2.jpg" alt="Modern Apartments" class="w-100">
-                                    <div class="card-badge green">For Rent</div>
-                                    <!--<div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Electronic City, Banglore</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                                            <span>4</span>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                                            <span>2</span>
-                                        </button>
-                                    </div>-->
-                                </figure>
-                                <div class="card-content">
-                                    <div class="card-price">
-                                        <strong>2BHK Semi-Furnished</strong>
-                                    </div>
-                                    <h3 class="h3 card-title">
-                                        Modern Apartments
-                                    </h3>
-                                    <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Benguluru. Newly Constructed.
-                                    </p>
-                                    <ul class="card-list">
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                                            <ion-icon name="bed-outline"></ion-icon>
-                                            <span>Bedrooms</span>
-                                        </li>
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                                            <ion-icon name="man-outline"></ion-icon>
-                                            <span>Bathrooms</span>
-                                        </li>
-                                        <li class="card-item">
-                                            <strong>1200</strong>
-                                            <ion-icon name="square-outline"></ion-icon>
-                                            <span>Square Ft</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer">
-                                    <!--
-                                    <div class="card-author">
-                                        <figure class="author-avatar">
-                                            <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                                        </figure>
-                                        <div>
-                                            <p class="author-name">
-                                                <a href="#">Praveen</a>
-                                            </p>
-                                            <p class="author-title">Estate Agents</p>
-                                        </div>
-                                    </div>
-                                    -->
-                                    <!--
-                                    <div class="card-footer-actions">
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="resize-outline"></ion-icon>
-                                        </button>
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="add-circle-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                    -->
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="property-card">
-                                <figure class="card-banner">
-                                    <div class="slider" id="btm-slider">
-                                        <img src="./assets/images/Properties/1BHK-fur/hall-2.png" class="slide clickable-slide active" alt="BTM Photo 1" onclick="toggleDescBtm()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
-                                        <img src="./assets/images/Properties/1BHK-fur/Bedroom.png" class="slide clickable-slide" alt="BTM Photo 2" onclick="toggleDescBtm()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
-                                        <img src="./assets/images/Properties/1BHK-fur/kitchen.png" class="slide clickable-slide" alt="BTM Photo 3" onclick="toggleDescBtm()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
-                                        <img src="./assets/images/Properties/1BHK-fur/hall.png" class="slide clickable-slide" alt="BTM Photo 4" onclick="toggleDescBtm()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
-                                        <img src="./assets/images/Properties/1BHK-fur/Washroom.png" class="slide clickable-slide" alt="BTM Photo 5" onclick="toggleDescBtm()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                    <div class="slider" id="2bhk-semi-slider">
+                                        <img src="./assets/images/Properties/2BHK-semi/Bedroom.png" class="slide clickable-slide active"
+                                            alt="BTM Photo 1" onclick="toggleDesc2BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/2BHK-semi/hall.png" class="slide clickable-slide" alt="BTM Photo 2"
+                                            onclick="toggleDesc2BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/2BHK-semi/kitchen.jpeg" class="slide clickable-slide" alt="BTM Photo 3"
+                                            onclick="toggleDesc2BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/2BHK-semi/Washroom.jpeg" class="slide clickable-slide" alt="BTM Photo 4"
+                                            onclick="toggleDesc2BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        
                                         <style>
                                             .clickable-slide {
                                                 cursor: pointer;
                                                 transition: box-shadow 0.2s;
                                             }
+                            
                                             .clickable-slide:hover {
                                                 box-shadow: 0 0 0 3px #007bff;
                                                 opacity: 0.92;
                                             }
                                         </style>
                                         <script>
-                                            function toggleDescBtm() {
-                                                var desc = document.getElementById('desc-btm');
+                                            function toggleDesc2BhkSemi() {
+                                                var desc = document.getElementById('desc-2bhk-semi');
                                                 desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
                                             }
                                         </script>
-                                        <button class="slider-btn prev" onclick="plusSlides(-1, 'btm-slider')">&#10094;</button>
-                                        <button class="slider-btn next" onclick="plusSlides(1, 'btm-slider')">&#10095;</button>
+                                        <button class="slider-btn prev" onclick="plusSlides(-1, '2bhk-semi-slider')">&#10094;</button>
+                                        <button class="slider-btn next" onclick="plusSlides(1, '2bhk-semi-slider')">&#10095;</button>
                                     </div>
                                     <div class="card-badge green">For Rent</div>
+                                   
+                                </figure>
+                                <ul class="card-list" style="display: flex; justify-content: center; gap: 24px; padding: 0; margin-top: 20px;">
+                                    <li class="card-item" style="text-align: center;">
+                                        <strong>2</strong>
+                                        <ion-icon name="bed-outline"></ion-icon>
+                                        <span>Bedrooms</span>
+                                    </li>
+                                    <li class="card-item" style="text-align: center;">
+                                        <strong>2</strong>
+                                        <ion-icon name="man-outline"></ion-icon>
+                                        <span>Bathrooms</span>
+                                    </li>
+                                    <li class="card-item" style="text-align: center;">
+                                        <strong>1200</strong>
+                                        <ion-icon name="square-outline"></ion-icon>
+                                        <span>Square Ft</span>
+                                    </li>
+                                </ul>
+                                <div class="card-content" style="text-align: center;">
+                                    <div class="card-price">
+                                        <strong>2BHK Semi-Furnished</strong>
+                                    </div>
+                                    <h3 class="h3 card-title">
+                                        Nice New Apartment
+                                    </h3>
+                                    <p class="card-text" id="desc-2bhk-semi" style="display: none; text-align: center;">
+                                        <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
+                                        1BHK semi furnished flat for rent near Kadugodi, Seegehalli.<br>
+                                        Hall with fan, TV stand, good ventilation.<br>
+                                        Kitchen with cabinets.<br>
+                                        Spacious bedroom with wardrobe.<br>
+                                        Bathroom with premium fittings.<br>
+                                        24/7 water and power backup.<br>
+                                        Parking space for bike and car.<br>
+                                        Balcony with good ventilation and sunlight.<br>
+                                        </span>
+                                        <button
+                                            style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                            onclick="window.location.href='tel:9876543210'">
+                                            BOOK NOW
+                                        </button>
+                                    </p>
+                                    <script>
+                                        // Show description when any image in the slider is clicked
+                                        document.querySelectorAll('#2bhk-semi-slider img').forEach(function (img) {
+                                            img.addEventListener('click', function () {
+                                                document.getElementById('desc-2bhk-semi').style.display = 'block';
+                                            });
+                                        });
+                                    </script>
+                            
+                                </div>
+                                <div class="card-footer">
+                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-2bhk-semi" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                        <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                                        <span>Nearby Locations</span>
+                                        <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
+                                    </button>
+
+                                    <ul id="nearby-2bhk-semi" class="nearby-list" hidden style="list-style:none;padding:8px 12px;margin:8px 0 0 0;border-radius:8px;background:#f8f9fb;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+                                        <!-- EAT OUTS -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('eatouts-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>EAT OUTS</strong>
+                                            </button>
+                                            <ul id="eatouts-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Lemon Leaf</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Lara da Dhaba</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Punjab Beat</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Nandhana Palace</strong> <small style="color:#666;margin-left:.5rem;">(1.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kapoor Cafe, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Imperio Restaurant</strong> <small style="color:#666;margin-left:.5rem;">(1.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Udupi Cafe</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Biriyani Zest</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Tall Oaks</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prime Golf</strong> <small style="color:#666;margin-left:.5rem;">(4.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pump House, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(1.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- HOSPITALS -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('hospitals-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>HOSPITALS</strong>
+                                            </button>
+                                            <ul id="hospitals-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Motherhood Clinic, Kanmanagala</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>RXDX Clinic, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Miracle Women & Children's Hospital</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Manipal Hospital, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(7.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Aster Whitefield Hospital</strong> <small style="color:#666;margin-left:.5rem;">(7.7 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- MALL -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('mall-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>MALL</strong>
+                                            </button>
+                                            <ul id="mall-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Rolls Hyper Market</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>SBR Horizon</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Green Field Hub</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Orion Uptown Mall</strong> <small style="color:#666;margin-left:.5rem;">(6.2 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Nexus Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(6.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- METRO STATION -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('metro-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>METRO STATION</strong>
+                                            </button>
+                                            <ul id="metro-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Whitefield / Kadugodi Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hopefarm / Chandsandra Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(3.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi Tree Park Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- BUSINESS CENTRES -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('business-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>BUSINESS CENTRES</strong>
+                                            </button>
+                                            <ul id="business-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Sumadhura Capital Towers</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>ITPB</strong> <small style="color:#666;margin-left:.5rem;">(5.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sigma Soft Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>First Technology Space</strong> <small style="color:#666;margin-left:.5rem;">(6.7 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prestige Featherlite Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.9 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- LANDMARK -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('landmark-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>LANDMARK</strong>
+                                            </button>
+                                            <ul id="landmark-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>GJM Sai Green Garden Layout (GJM guest house)</strong></li>
+                                                <li style="padding:4px 0;"><strong>Next to The Villagio</strong></li>
+                                                <li style="padding:4px 0;"><strong>HP Petroleum Corporation Ltd</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- WORSHIP -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('worship-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>WORSHIP</strong>
+                                            </button>
+                                            <ul id="worship-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Hanuman Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Venugopala Swamy / Sri Veeranjaneya Swamy Temple</strong> <small style="color:#666;margin-left:.5rem;">(0.30 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Abayahastha Anjaneya Temple</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- AREA -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('area-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>AREA</strong>
+                                            </button>
+                                            <ul id="area-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Belathur</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(3.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kanmangala</strong> <small style="color:#666;margin-left:.5rem;">(2.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chikkabanahalli</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hope Farm Bus Stop</strong> <small style="color:#666;margin-left:.5rem;">(4.1 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- EDUCATION -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('education-2bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>EDUCATION</strong>
+                                            </button>
+                                            <ul id="education-2bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Crescendo International Preschool</strong> <small style="color:#666;margin-left:.5rem;">(1.5 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chrysalis High School, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pragathi ORCHIDS The International School</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pragathi PU College</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>MVJ College of Engineering</strong> <small style="color:#666;margin-left:.5rem;">(4.9 km)</small></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner">
+                                    <div class="slider" id="1bhk-fur-slider">
+                                        <img src="./assets/images/Properties/1BHK-fur/hall.png" class="slide clickable-slide active"
+                                            alt="BTM Photo 1" onclick="toggleDesc1BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/1BHK-fur/Bedroom.png" class="slide clickable-slide" alt="BTM Photo 2"
+                                            onclick="toggleDesc1BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/1BHK-fur/kitchen.png" class="slide clickable-slide" alt="BTM Photo 3"
+                                            onclick="toggleDesc1BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/1BHK-fur/hall-2.png" class="slide clickable-slide" alt="BTM Photo 4"
+                                            onclick="toggleDesc1BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <img src="./assets/images/Properties/1BHK-fur/Washroom.png" class="slide clickable-slide" alt="BTM Photo 5"
+                                            onclick="toggleDesc1BhkFur()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                                        <style>
+                                            .clickable-slide {
+                                                cursor: pointer;
+                                                transition: box-shadow 0.2s;
+                                            }
+                            
+                                            .clickable-slide:hover {
+                                                box-shadow: 0 0 0 3px #007bff;
+                                                opacity: 0.92;
+                                            }
+                                        </style>
+                                        <script>
+                                            function toggleDesc1BhkFur() {
+                                                var desc = document.getElementById('desc-1bhk-fur');
+                                                desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
+                                            }
+                                        </script>
+                                        <button class="slider-btn prev" onclick="plusSlides(-1, '1bhk-fur-slider')">&#10094;</button>
+                                        <button class="slider-btn next" onclick="plusSlides(1, '1bhk-fur-slider')">&#10095;</button>
+                                    </div>
+                                    <div class="card-badge green">For Rent</div>
+                                   
                                 </figure>
                                 <ul class="card-list" style="display: flex; justify-content: center; gap: 24px; padding: 0; margin-top: 20px;">
                                     <li class="card-item" style="text-align: center;">
@@ -521,35 +759,243 @@
                                         <strong>1BHK Furnished</strong>
                                     </div>
                                     <h3 class="h3 card-title">
-                                        Comfortable Apartment
+                                        Nice New Apartment
                                     </h3>
-                                    <p class="card-text" id="desc-btm" style="display: none; text-align: center;">
+                                    <p class="card-text" id="desc-1bhk-fur" style="display: none; text-align: center;">
                                         <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
-                                            1BHK fully furnished flat for rent in BTM Layout<br>
-                                            Hall with sofa, TV, fan, and good ventilation<br>
-                                            Kitchen with cabinets and appliances<br>
-                                            Spacious bedroom with wardrobe and bed<br>
-                                            Bathroom with premium fittings<br>
-                                            24/7 water and power backup<br>
-                                            Parking space for bike and car<br>
-                                            Balcony with good ventilation and sunlight<br>
+                                            Location: Prime area on seegehalli, Kadugodi.<br>
+                                            Size: Spacious 1BHK with well-ventilated rooms with balcony.<br>
+
+                                            Furniture & Amenities:<br>
+
+                                            TV, Sofa set & center table.<br>
+                                            Bed with a mattress.<br>
+                                            Wardrobe & storage cabinets.<br>
+                                            Modular kitchen with refrigerator and stove.<br>
+                                            Common Washing machine & individual geyser.<br>
+
+                                            Balcony: Yes, with a scenic view.<br>
+                                            Parking: Available.<br>
+                                            Security: 24/7 CCTV & security guards.<br>
+                                            Power Backup: Yes.<br>
                                         </span>
-                                        <button style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                        <button
+                                            style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
                                             onclick="window.location.href='tel:9876543210'">
                                             BOOK NOW
                                         </button>
                                     </p>
                                     <script>
                                         // Show description when any image in the slider is clicked
-                                        document.querySelectorAll('#btm-slider img').forEach(function(img) {
-                                            img.addEventListener('click', function() {
-                                                document.getElementById('desc-btm').style.display = 'block';
+                                        document.querySelectorAll('#1bhk-fur-slider img').forEach(function (img) {
+                                            img.addEventListener('click', function () {
+                                                document.getElementById('desc-1bhk-fur').style.display = 'block';
                                             });
                                         });
                                     </script>
+                            
                                 </div>
                                 <div class="card-footer">
-                                    <!-- Optionally add agent info or actions here -->
+                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-1bhk-fur" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                        <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                                        <span>Nearby Locations</span>
+                                        <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
+                                    </button>
+
+                                    <ul id="nearby-1bhk-fur" class="nearby-list" hidden style="list-style:none;padding:8px 12px;margin:8px 0 0 0;border-radius:8px;background:#f8f9fb;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+                                        <!-- EAT OUTS -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('eatouts-1bhk', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>EAT OUTS</strong>
+                                            </button>
+                                            <ul id="eatouts-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Lemon Leaf</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Lara da Dhaba</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Punjab Beat</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Nandhana Palace</strong> <small style="color:#666;margin-left:.5rem;">(1.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kapoor Cafe, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Imperio Restaurant</strong> <small style="color:#666;margin-left:.5rem;">(1.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Udupi Cafe</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Biriyani Zest</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Tall Oaks</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prime Golf</strong> <small style="color:#666;margin-left:.5rem;">(4.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pump House, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(1.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- HOSPITALS -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('hospitals-1bhk', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>HOSPITALS</strong>
+                                            </button>
+                                            <ul id="hospitals-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Motherhood Clinic, Kanmanagala</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>RXDX Clinic, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Miracle Women & Children’s Hospital</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Manipal Hospital, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(7.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Aster Whitefield Hospital</strong> <small style="color:#666;margin-left:.5rem;">(7.7 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- MALL -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('mall-1bhk', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>MALL</strong>
+                                            </button>
+                                            <ul id="mall-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Rolls Hyper Market</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>SBR Horizon</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Green Field Hub</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Orion Uptown Mall</strong> <small style="color:#666;margin-left:.5rem;">(6.2 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Nexus Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(6.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- METRO STATION -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('metro-1bhk', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>METRO STATION</strong>
+                                            </button>
+                                            <ul id="metro-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Whitefield / Kadugodi Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hopefarm / Chandsandra Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(3.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi Tree Park Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- BUSINESS CENTRES -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('business-1bhk', event)"
+                                                style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>BUSINESS CENTRES</strong>
+                                            </button>
+                                            <ul id="business-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Sumadhura Capital Towers</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>ITPB</strong> <small style="color:#666;margin-left:.5rem;">(5.8 km)</small>
+                                                </li>
+                                                <li style="padding:4px 0;"><strong>Sigma Soft Tech Park</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(7.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>First Technology Space</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(6.7 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prestige Featherlite Tech Park</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(7.9 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- LANDMARK -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('landmark-1bhk', event)"
+                                                style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>LANDMARK</strong>
+                                            </button>
+                                            <ul id="landmark-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>GJM Sai Green Garden Layout (GJM guest house)</strong></li>
+                                                <li style="padding:4px 0;"><strong>Next to The Villagio</strong></li>
+                                                <li style="padding:4px 0;"><strong>HP Petroleum Corporation Ltd</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <!-- WORSHIP -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('worship-1bhk', event)"
+                                                style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>WORSHIP</strong>
+                                            </button>
+                                            <ul id="worship-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Hanuman Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1
+                                                        km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Venugopala Swamy / Sri Veeranjaneya Swamy Temple</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(0.30 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Abayahastha Anjaneya Temple</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <!-- AREA -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('area-1bhk', event)"
+                                                style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>AREA</strong>
+                                            </button>
+                                            <ul id="area-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Belathur</strong> <small style="color:#666;margin-left:.5rem;">(2.0
+                                                        km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(3.4
+                                                        km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kanmangala</strong> <small style="color:#666;margin-left:.5rem;">(2.6
+                                                        km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chikkabanahalli</strong> <small style="color:#666;margin-left:.5rem;">(2.9
+                                                        km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hope Farm Bus Stop</strong> <small style="color:#666;margin-left:.5rem;">(4.1
+                                                        km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- EDUCATION -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('education-1bhk', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>EDUCATION</strong>
+                                            </button>
+                                            <ul id="education-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Crescendo International Preschool</strong> <small style="color:#666;margin-left:.5rem;">(1.5 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chrysalis High School, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pragathi ORCHIDS The International School</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pragathi PU College</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>MVJ College of Engineering</strong> <small style="color:#666;margin-left:.5rem;">(4.9 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        
+                                    </ul>
+
+                                    <script>
+                                        function toggleNearby(e) {
+                                            const btn = e.currentTarget;
+                                            const id = btn.getAttribute('aria-controls');
+                                            const list = document.getElementById(id);
+                                            const expanded = btn.getAttribute('aria-expanded') === 'true';
+                                            btn.setAttribute('aria-expanded', String(!expanded));
+                                            list.hidden = expanded;
+
+                                            // Update chevron direction on the main button
+                                            const chevrons = btn.querySelectorAll('ion-icon[name*="chevron"]');
+                                            if (chevrons.length) {
+                                                // last chevron is the down/up icon
+                                                const mainChevron = chevrons[chevrons.length - 1];
+                                                mainChevron.setAttribute('name', expanded ? 'chevron-down-outline' : 'chevron-up-outline');
+                                            }
+                                        }
+
+                                        function toggleCategory(categoryId, event) {
+                                            const categoryList = document.getElementById(categoryId);
+                                            const categoryBtn = event.currentTarget;
+                                            const chevron = categoryBtn.querySelector('ion-icon');
+
+                                            const isHidden = categoryList.style.display === 'none' || categoryList.style.display === '';
+                                            if (isHidden) {
+                                                categoryList.style.display = 'block';
+                                                categoryBtn.setAttribute('aria-expanded', 'true');
+                                                if (chevron) chevron.style.transform = 'rotate(90deg)';
+                                            } else {
+                                                categoryList.style.display = 'none';
+                                                categoryBtn.setAttribute('aria-expanded', 'false');
+                                                if (chevron) chevron.style.transform = 'rotate(0deg)';
+                                            }
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </li>
@@ -557,7 +1003,7 @@
                             <div class="property-card">
                                 <figure class="card-banner">
                                     <div class="slider" id="1bhk-semi-slider">
-                                        <img src="./assets/images/Properties/1bhk-semi/hall.png" class="slide clickable-slide active" alt="BTM Photo 1" onclick="toggleDesc1BhkSemi()" style="width:100%;aspect-ratio:4/;object-fit:cover;">
+                                        <img src="./assets/images/Properties/1bhk-semi/hall.png" class="slide clickable-slide active" alt="BTM Photo 1" onclick="toggleDesc1BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
                                         <img src="./assets/images/Properties/1BHK-fur/Bedroom.png" class="slide clickable-slide" alt="BTM Photo 2" onclick="toggleDesc1BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
                                         <img src="./assets/images/Properties/1bhk-semi/kitchen.png" class="slide clickable-slide" alt="BTM Photo 3" onclick="toggleDesc1BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
                                         <img src="./assets/images/Properties/1bhk-semi/hall2.png" class="slide clickable-slide" alt="BTM Photo 4" onclick="toggleDesc1BhkSemi()" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
@@ -582,20 +1028,7 @@
                                         <button class="slider-btn next" onclick="plusSlides(1, '1bhk-semi-slider')">&#10095;</button>
                                     </div>
                                     <div class="card-badge green">For Rent</div>
-                                    <!--div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Jayanagara, Banglore</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                                            <span>4</span>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                                            <span>2</span>
-                                        </button>
-                                    </div-->
+                                    
                                 </figure>
                                 <ul class="card-list" style="display: flex; justify-content: center; gap: 24px; padding: 0; margin-top: 20px;">
                                     <li class="card-item" style="text-align: center;">
@@ -623,14 +1056,14 @@
                                     </h3>
                                     <p class="card-text" id="desc-1bhk-semi" style="display: none; text-align: center;">
                                         <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
-                                            1BHK semi furnished flat for rent near Kadugodi, Seegehalli<br>
-                                            Hall with fan, TV stand, good ventilation<br>
-                                            Kitchen with cabinets<br>
-                                            Spacious bedroom with wardrobe<br>
-                                            Bathroom with premium fittings<br>
-                                            24/7 water and power backup<br>
-                                            Parking space for bike and car<br>
-                                            Balcony with good ventilation and sunlight<br>
+                                            1BHK semi furnished flat for rent near Kadugodi, Seegehalli.<br>
+                                            Hall with fan, TV stand, good ventilation.<br>
+                                            Kitchen with cabinets.<br>
+                                            Spacious bedroom with wardrobe.<br>
+                                            Bathroom with premium fittings.<br>
+                                            24/7 water and power backup.<br>
+                                            Parking space for bike and car.<br>
+                                            Balcony with good ventilation and sunlight.<br>
                                         </span>
                                         <button style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
                                             onclick="window.location.href='tel:9876543210'">
@@ -648,28 +1081,149 @@
                                    
                                 </div>
                                 <div class="card-footer">
-                                    <!--<div class="card-author">
-                                        <figure class="author-avatar">
-                                            <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                                        </figure>
-                                        <div>
-                                            <p class="author-name">
-                                                <a href="#">Vishwas</a>
-                                            </p>
-                                            <p class="author-title">Estate Agents</p>
-                                        </div>
-                                    </div>-->
-                                    <!--<div class="card-footer-actions">
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="resize-outline"></ion-icon>
-                                        </button>
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="card-footer-actions-btn">
-                                            <ion-icon name="add-circle-outline"></ion-icon>
-                                        </button>
-                                    </div>-->
+                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-1bhk-semi" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                        <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                                        <span>Nearby Locations</span>
+                                        <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
+                                    </button>
+
+                                    <ul id="nearby-1bhk-semi" class="nearby-list" hidden style="list-style:none;padding:8px 12px;margin:8px 0 0 0;border-radius:8px;background:#f8f9fb;box-shadow:0 1px 4px rgba(0,0,0,.06);">
+                                        <!-- EAT OUTS -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('eatouts-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>EAT OUTS</strong>
+                                            </button>
+                                            <ul id="eatouts-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Lemon Leaf</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Lara da Dhaba</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Punjab Beat</strong> <small style="color:#666;margin-left:.5rem;">(2.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Nandhana Palace</strong> <small style="color:#666;margin-left:.5rem;">(1.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kapoor Cafe, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Imperio Restaurant</strong> <small style="color:#666;margin-left:.5rem;">(1.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Udupi Cafe</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Biriyani Zest</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Tall Oaks</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prime Golf</strong> <small style="color:#666;margin-left:.5rem;">(4.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pump House, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(1.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- HOSPITALS -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('hospitals-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>HOSPITALS</strong>
+                                            </button>
+                                            <ul id="hospitals-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Motherhood Clinic, Kanmanagala</strong> <small style="color:#666;margin-left:.5rem;">(2.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>RXDX Clinic, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Miracle Women & Children's Hospital</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Manipal Hospital, Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(7.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Aster Whitefield Hospital</strong> <small style="color:#666;margin-left:.5rem;">(7.7 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- MALL -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('mall-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>MALL</strong>
+                                            </button>
+                                            <ul id="mall-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Rolls Hyper Market</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>SBR Horizon</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Green Field Hub</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Orion Uptown Mall</strong> <small style="color:#666;margin-left:.5rem;">(6.2 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Nexus Whitefield</strong> <small style="color:#666;margin-left:.5rem;">(6.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- METRO STATION -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('metro-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>METRO STATION</strong>
+                                            </button>
+                                            <ul id="metro-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Whitefield / Kadugodi Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hopefarm / Chandsandra Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(3.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi Tree Park Metro Station</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- BUSINESS CENTRES -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('business-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>BUSINESS CENTRES</strong>
+                                            </button>
+                                            <ul id="business-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Sumadhura Capital Towers</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>ITPB</strong> <small style="color:#666;margin-left:.5rem;">(5.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sigma Soft Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>First Technology Space</strong> <small style="color:#666;margin-left:.5rem;">(6.7 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prestige Featherlite Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.9 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- LANDMARK -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('landmark-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>LANDMARK</strong>
+                                            </button>
+                                            <ul id="landmark-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>GJM Sai Green Garden Layout (GJM guest house)</strong></li>
+                                                <li style="padding:4px 0;"><strong>Next to The Villagio</strong></li>
+                                                <li style="padding:4px 0;"><strong>HP Petroleum Corporation Ltd</strong> <small style="color:#666;margin-left:.5rem;">(0.85 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- WORSHIP -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('worship-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>WORSHIP</strong>
+                                            </button>
+                                            <ul id="worship-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Hanuman Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Venugopala Swamy / Sri Veeranjaneya Swamy Temple</strong> <small style="color:#666;margin-left:.5rem;">(0.30 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Abayahastha Anjaneya Temple</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- AREA -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('area-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>AREA</strong>
+                                            </button>
+                                            <ul id="area-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Belathur</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(3.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kanmangala</strong> <small style="color:#666;margin-left:.5rem;">(2.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chikkabanahalli</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hope Farm Bus Stop</strong> <small style="color:#666;margin-left:.5rem;">(4.1 km)</small></li>
+                                            </ul>
+                                        </li>
+
+                                        <!-- EDUCATION -->
+                                        <li style="padding:6px 0;">
+                                            <button onclick="toggleCategory('education-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
+                                                <ion-icon name="chevron-forward-outline" style="font-size:14px;transition:transform 0.2s;"></ion-icon>
+                                                <strong>EDUCATION</strong>
+                                            </button>
+                                            <ul id="education-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
+                                                <li style="padding:4px 0;"><strong>Crescendo International Preschool</strong> <small style="color:#666;margin-left:.5rem;">(1.5 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chrysalis High School, Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(1.3 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pragathi ORCHIDS The International School</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Pragathi PU College</strong> <small style="color:#666;margin-left:.5rem;">(3.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>MVJ College of Engineering</strong> <small style="color:#666;margin-left:.5rem;">(4.9 km)</small></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -680,8 +1234,8 @@
             <!-- FEATURES -->
             <section class="features">
                 <div class="container">
-                    <p class="section-subtitle">Our Aminities</p>
-                    <h2 class="h2 section-title">Building Aminities</h2>
+                    <p class="section-subtitle">OUR AMENITIES</p>
+                    <h2 class="h2 section-title">Building Amenities</h2>
                     <ul class="features-list">
                         <li class="features-card">
                             <div class="card-icon">
@@ -694,234 +1248,84 @@
                                 <ion-icon name="water-outline"></ion-icon>
                             </div>
                             <h3 class="card-title">24/7 Water supply</h3>
-                            <!--<div class="card-btn">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>-->
+                            
                         </li>
                         <li class="features-card">
                             <div class="card-icon">
                                 <ion-icon name="shield-checkmark-outline"></ion-icon>
                             </div>
                             <h3 class="card-title">Private Security</h3>
-                            <!--<div class="card-btn">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>-->
+                           
                         </li>
                         <li class="features-card">
                             <div class="card-icon">
                                 <ion-icon name="swap-vertical-outline"></ion-icon>
                             </div>
                             <h3 class="card-title">Lift</h3>
-                            <!--<div class="card-btn">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>-->
+                            
                         </li>
                         <li class="features-card">
                             <div class="card-icon">
                                 <ion-icon name="flash-outline"></ion-icon>
                             </div>
                             <h3 class="card-title">24/7 Power backup</h3>
-                            <!--<div class="card-btn">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>-->
+                            
                         </li>
                         <li class="features-card">
                             <div class="card-icon">
                                 <ion-icon name="bed-outline"></ion-icon>
                             </div>
                             <h3 class="card-title"> Furnished rooms</h3>
-                            <!--<div class="card-btn">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>-->
+                            
                         </li>
-                        <!---
-                        <li>
-                            <a href="#" class="features-card">
-                                <div class="card-icon">
-                                    <ion-icon name="home-outline"></ion-icon>
-                                </div>
-                                <h3 class="card-title">Smart Homes</h3>
-                                <div class="card-btn">
-                                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </div>
-                            </a>
-                        </li>
-                        -->
-                        <li class="features-card">
+
+                        <li class="features-card" role="button" tabindex="0"
+                            onclick="window.location.href='tel:7338282981'"
+                            onkeypress="if(event.key === 'Enter'){ window.location.href='tel:7338282981'; }"
+                            style="cursor: pointer;">
                             <div class="card-icon">
                                 <ion-icon name="call-outline"></ion-icon>
                             </div>
                             <h3 class="card-title">Help Desk</h3>
-                            <!--<div class="card-btn">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>-->
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <!-- BLOG -->
-            <!---
-            <section class="blog" id="blog">
-                <div class="container">
-                    <p class="section-subtitle">News & Blogs</p>
-                    <h2 class="h2 section-title">Leatest News Feeds</h2>
-                    <ul class="blog-list has-scrollbar">
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                                </figure>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <ul class="card-meta-list">
-                                            <li>
-                                                <a href="#" class="card-meta-link">
-                                                    <ion-icon name="person"></ion-icon>
-                                                    <span>by: Admin</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="card-meta-link">
-                                                    <ion-icon name="pricetags"></ion-icon>
-                                                    <span>Interior</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <h3 class="h3 blog-title">
-                                            <a href="#">The Most Inspiring Interior Design Of 2021</a>
-                                        </h3>
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <div class="publish-date">
-                                            <ion-icon name="calendar"></ion-icon>
-                                            <time datetime="2022-27-04">Apr 27, 2022</time>
-                                        </div>
-                                        <a href="#" class="read-more-btn">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                                </figure>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <ul class="card-meta-list">
-                                            <li>
-                                                <a href="#" class="card-meta-link">
-                                                    <ion-icon name="person"></ion-icon>
-                                                    <span>by: Admin</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="card-meta-link">
-                                                    <ion-icon name="pricetags"></ion-icon>
-                                                    <span>Estate</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <h3 class="h3 blog-title">
-                                            <a href="#">Recent Commercial Real Estate Transactions</a>
-                                        </h3>
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <div class="publish-date">
-                                            <ion-icon name="calendar"></ion-icon>
-                                            <time datetime="2022-27-04">Apr 27, 2022</time>
-                                        </div>
-                                        <a href="#" class="read-more-btn">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                                        class="w-100">
-                                </figure>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <ul class="card-meta-list">
-                                            <li>
-                                                <a href="#" class="card-meta-link">
-                                                    <ion-icon name="person"></ion-icon>
-                                                    <span>by: Admin</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="card-meta-link">
-                                                    <ion-icon name="pricetags"></ion-icon>
-                                                    <span>Room</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <h3 class="h3 blog-title">
-                                            <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
-                                        </h3>
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <div class="publish-date">
-                                            <ion-icon name="calendar"></ion-icon>
-                                            <time datetime="2022-27-04">Apr 27, 2022</time>
-                                        </div>
-                                        <a href="#" class="read-more-btn">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            -->
-
-            <!-- CTA -->
-            <!--<section class="cta">
-                <div class="container">
-                    <div class="cta-card">
-                        <div class="card-content">
-                            <h2 class="h2 card-title">Looking for a dream home?</h2>
-                            <p class="card-text">We can help you realize your dream of a new home</p>
-                        </div>
-                        <button class="btn cta-btn">
-                            <span>Explore Properties</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-            </section>-->
+           
         </article>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" >
         <div class="footer-top">
             <div class="container">
                 <div class="footer-brand">
                     <div class="logo">
-                        <img src="./assets/images/Logo/logo-dark.png" alt="Homeverse logo" height="100px" width="auto">
+                        <img src="./assets/images/Logo/logo-white.png" alt="Eazemyrent logo" height="100px" width="auto">
                     </div>
                     <p class="section-text"></p>
                     <ul class="contact-list">
-                        <!--<li>
-                            <a href="#location" class="contact-link">
-                                <ion-icon name="location-outline"></ion-icon>
-                                <address>Maratahalli, Banglore</address>
-                            </a>
-                        </li>-->
+                        
                         <li>
-                            <a href="tel:+0123456789" class="contact-link">
-                                <ion-icon name="call-outline"></ion-icon>
-                                <span>+91 9876543210</span>
+                            <a href="tel:7338282981" class="contact-link"
+                               style="color: #ffffff !important; text-decoration: none !important;"
+                               onmouseover="this.style.color='#ffffff'; (this.querySelector('ion-icon')||{}).style.color='#ffffff'; (this.querySelector('span')||{}).style.color='#ffffff';"
+                               onmouseout="this.style.color='#ffffff'; (this.querySelector('ion-icon')||{}).style.color='#ffffff'; (this.querySelector('span')||{}).style.color='#ffffff';"
+                               onfocus="this.style.color='#ffffff'; (this.querySelector('ion-icon')||{}).style.color='#ffffff'; (this.querySelector('span')||{}).style.color='#ffffff';">
+                                <ion-icon name="call-outline" style="color: #ffffff !important;"></ion-icon>
+                                <span style="color: #ffffff !important;">+91 7338282981</span>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:contact@homeverse.com" class="contact-link">
-                                <ion-icon name="mail-outline"></ion-icon>
-                                <span>info@eazemyrent.com</span>
+                            <!-- Changed brand: if legacy inbox still used, keep; otherwise update to info@eazemyrent.com -->
+                            <a href="mailto:eazemyrentbng@gmail.com" class="contact-link"
+                               style="color: #ffffff !important; text-decoration: none !important;"
+                               onmouseover="this.style.color='#ffffff'; (this.querySelector('ion-icon')||{}).style.color='#ffffff'; (this.querySelector('span')||{}).style.color='#ffffff';"
+                               onmouseout="this.style.color='#ffffff'; (this.querySelector('ion-icon')||{}).style.color='#ffffff'; (this.querySelector('span')||{}).style.color='#ffffff';"
+                               onfocus="this.style.color='#ffffff'; (this.querySelector('ion-icon')||{}).style.color='#ffffff'; (this.querySelector('span')||{}).style.color='#ffffff';">
+                                <ion-icon name="mail-outline" style="color: #ffffff !important;"></ion-icon>
+                                <span style="color: #ffffff !important;">eazemyrentbng@gmail.com</span>
                             </a>
                         </li>
                     </ul>
@@ -932,11 +1336,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://x.com/eazemyrentbng" class="social-link">
-                                <!-- SVG for the X (Twitter) logo -->
-                                <svg width="12" height="12" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="120" height="120" fill="black"/>
-                                    <path d="M908.305 0H1098.6L690.305 521.685L1167 1227H808.5L517.5 813.5L185 1227H-5.5L429.5 661.5L-1 0H366.5L626.5 375.5L908.305 0ZM846.5 1105H946.5L308.5 114H201.5L846.5 1105Z" fill="white"/>
+                            <a href="https://x.com/eazemyrentbng" class="social-link" aria-label="X (Twitter)">
+                                <!-- X logo with white icon on transparent background -->
+                                <svg width="12" height="12" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                    <rect width="120" height="120" fill="none" />
+                                    <path
+                                        d="M908.305 0H1098.6L690.305 521.685L1167 1227H808.5L517.5 813.5L185 1227H-5.5L429.5 661.5L-1 0H366.5L626.5 375.5L908.305 0ZM846.5 1105H946.5L308.5 114H201.5L846.5 1105Z"
+                                        fill="#fff" />
                                 </svg>
                             </a>
                         </li>
@@ -957,85 +1363,13 @@
                         </li>
                     </ul>
                 </div>
-                <!--
-                <div class="footer-link-box">
-                    <ul class="footer-list">
-                        <li>
-                            <p class="footer-list-title">Company</p>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">About</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">All Products</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Locations Map</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Contact us</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li>
-                            <p class="footer-list-title">Services</p>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Order tracking</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Wish List</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Login</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">My account</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Promotional Offers</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li>
-                            <p class="footer-list-title">Customer Care</p>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Login</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">My account</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Wish List</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Order tracking</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-link">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-                -->
+                
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
                 <p class="copyright">
-                    &copy; 2025 <a href="#">EazeMyRent</a>. All Rights Reserved
+                    &copy; 2025 EazeMyRent. All Rights Reserved
                 </p>
             </div>
         </div>
@@ -1050,4 +1384,3 @@
 </body>
 
 </html>
-<!DOCTYPE html>
