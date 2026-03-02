@@ -7,7 +7,7 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W9T4WG54');</script>
+})(window,document,'script','dataLayer','GTM-4J5LBS5R3G');</script>
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -83,6 +83,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <ion-icon name="logo-instagram"></ion-icon>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://wa.me/918197778343?text=Hi%20there%2C%20I%27m%20interested%20in%20a%20rental"
+   target="_blank" rel="noopener" class="social-link">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </li>
                         <div>
                             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfYALHiBh8RJYCkfQQTD1krdn2i6d2o7bRLdTCIXDb_Clb0kw/viewform?usp=publish-editor" class="navbar-link" data-nav-link>Own a Property?</a></li>
                         </div>
@@ -105,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <nav class="navbar" data-navbar id="primary-navigation" aria-hidden="true">
                     <div class="navbar-top">
                         <div class="logo" style="display:flex; align-items:center; gap:.5rem;">
-                            <img src="./assets/images/Logo/logo new.jpg" alt="Eazemyrent logo" style="display:block; height:100px; width:auto; object-fit:contain;">
+                            <img src="./assets/images/Logo/image.png" alt="Eazemyrent logo" style="display:block; height:100px; width:auto; object-fit:contain;">
                         </div>
                         <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
                             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -133,18 +139,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <section class="hero" id="home">
                 <div class="container">
                     <div class="hero-content">
-                        <p class="hero-subtitle">
+                        <p class="section-subtitle hero-subtitle">
                             <ion-icon name="home"></ion-icon>
                             <span>HOME</span>
                         </p>
-                        <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
+                        <h2 class="h1 hero-title section-title">Find Your Dream House By Us</h2>
                         <p class="callout">
                             At Eazemyrent, we believe that renting a home should be simple, stress-free, and supportive. From your first tour to the day you move in-and every day after-we're here to make your living experience as comfortable as possible.
                             
                        
                     </div>
                     <figure class="hero-banner">
-                        <img src="./assets/images/Building/Building.png" alt="Modern house model" class="w-100">
+                        <img src="./assets/images/About/Building_About.png" alt="Modern house model" class="w-100">
                     </figure>
                 </div>
             </section>
@@ -152,26 +158,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- ABOUT -->
             <section class="about" id="about">
                 <div class="container">
-                    <figure class="about-banner">
-                        <img src="./assets/images/About/Building_About.png" alt="House interior">
-                       
-                    </figure>
-                    <div class="about-content">
-                        <p class="section-subtitle">ABOUT US</p>
-                        <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
+                    <!-- text block (reuses hero-content styling for consistency) -->
+                    <div class="hero-content">
+                        <p class="section-subtitle hero-subtitle">ABOUT US</p>
+                        <h2 class="h2 hero-title section-title">The Leading Real Estate Rental Marketplace.</h2>
                         <p class="about-text">
-                            Over 50 people work for us in more than 70 area all over the banglore,
-                            combined with
-                            specialist services
+                          Over 50 people work for us in more than 70 areas all over Bangalore, combined with specialist services.<br>
                         </p>
-                        
                         <p class="callout">
-                            Our goal is to deliver hassle-free property management solutions built on trust, performance, and transparency. Whether
-                            you own a single-family home or a portfolio of rental units, we make ownership effortless. We do Marketing, maintenance,
-                            rent collection, transparent reporting, tenant placement and legal compliance.
+                          Our goal is to deliver hassle-free property management solutions built on trust, performance, and transparency.<br>
+                          Whether you own a single-family home or a portfolio of rental units, we make ownership effortless.<br>
+                          We handle marketing, maintenance, rent collection, transparent reporting, tenant placement, and legal compliance.
                         </p>
-                       
                     </div>
+                    <!-- banner image mimics home hero layout -->
+                    <figure class="hero-banner about-banner">
+                    <img src="./assets/images/Building/Building.png" alt="House interior" class="w-100 desktop-only">
+                    <style>
+                        @media (max-width: 767px) {
+                            .desktop-only {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                    </figure>
                 </div>
             </section>
 
@@ -189,16 +199,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <ion-icon name="close-circle"
                                     style="color: red; font-size: 24px; position: absolute; top: 0; right: 0;"></ion-icon>
                             </div>
-                            <span>NO BROKERGAE</span>
-                            
+                            <span>NO BROKERAGE</span>
                         </div>
                     </li>
+                    
                     <li>
                         <div class="service-card">
                             <div class="card-icon" style="position: relative;">
                                 <ion-icon name="checkmark-done-circle-outline" style="font-size: 32px;"></ion-icon>
                             </div>
-                            <span>HASSEL FREE </br>RENTALS</span>
+                            <span>HASSEL FREE RENTALS</span>
                             
                         </div>
                     </li>
@@ -285,11 +295,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </li>
                             </ul>
                             <div class="card-content" style="text-align: center;">
-                                <div class="card-price">
+                                <!--<div class="card-price">
                                     <strong>2BHK Fully Furnished</strong>
-                                </div>
+                                </div>-->
                                 <h3 class="h3 card-title">
-                                    Nice New Apartment
+                                   Fully Furnished 2BHK flats for rent near seegehalli, ITPL Main road, Kadugodi
                                 </h3>
                                 <p class="card-text" id="desc-2bhk-fur" style="display: none; text-align: center;">
                                     <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
@@ -307,24 +317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     Security: 24/7 CCTV & security guards.<br>
                                     Power Backup: Yes.<br>
                                     </span>
-                                    <button
-                                        style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
-                                        onclick="window.location.href='tel:8197778343'">
-                                        BOOK NOW
-                                    </button>
-                                </p>
-                                <script>
-                                    // Show description when any image in the slider is clicked
-                                    document.querySelectorAll('#2bhk-fur-slider img').forEach(function (img) {
-                                        img.addEventListener('click', function () {
-                                            document.getElementById('desc-2bhk-fur').style.display = 'block';
-                                        });
-                                    });
-                                </script>
-                        
-                            </div>
-                            <div class="card-footer">
-                                <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-2bhk-fur" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-2bhk-fur" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
                                     <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
                                     <span>Nearby Locations</span>
                                     <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
@@ -467,8 +460,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </ul>
                                     </li>
                                 </ul>
+                                    <button
+                                        style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                        onclick="window.location.href='tel:8197778343'">
+                                        BOOK NOW
+                                    </button>
+                                </p>
+                                <script>
+                                    // Show description when any image in the slider is clicked
+                                    document.querySelectorAll('#2bhk-fur-slider img').forEach(function (img) {
+                                        img.addEventListener('click', function () {
+                                            document.getElementById('desc-2bhk-fur').style.display = 'block';
+                                        });
+                                    });
+                                </script>
+                        
                             </div>
-                        </div>
                         </li>
                         <li>
                             <div class="property-card">
@@ -524,15 +531,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </li>
                                 </ul>
                                 <div class="card-content" style="text-align: center;">
-                                    <div class="card-price">
+                                    <!--<div class="card-price">
                                         <strong>2BHK Semi-Furnished</strong>
-                                    </div>
+                                    </div>-->
                                     <h3 class="h3 card-title">
-                                        Nice New Apartment
+                                       Semi Furnished 2BHK  House for rent near Seegehalli, Kadugodi
                                     </h3>
                                     <p class="card-text" id="desc-2bhk-semi" style="display: none; text-align: center;">
                                         <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
-                                        1BHK semi furnished flat for rent near Kadugodi, Seegehalli.<br>
+                                        2BHK semi furnished flat for rent near Kadugodi, Seegehalli.<br>
                                         Hall with fan, TV stand, good ventilation.<br>
                                         Kitchen with cabinets.<br>
                                         Spacious bedroom with wardrobe.<br>
@@ -541,24 +548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         Parking space for bike and car.<br>
                                         Balcony with good ventilation and sunlight.<br>
                                         </span>
-                                        <button
-                                            style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
-                                            onclick="window.location.href='tel:8197778343'">
-                                            BOOK NOW
-                                        </button>
-                                    </p>
-                                    <script>
-                                        // Show description when any image in the slider is clicked
-                                        document.querySelectorAll('#2bhk-semi-slider img').forEach(function (img) {
-                                            img.addEventListener('click', function () {
-                                                document.getElementById('desc-2bhk-semi').style.display = 'block';
-                                            });
-                                        });
-                                    </script>
-                            
-                                </div>
-                                <div class="card-footer">
-                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-2bhk-semi" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                        <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-2bhk-semi" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
                                         <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
                                         <span>Nearby Locations</span>
                                         <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
@@ -701,7 +691,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </ul>
                                         </li>
                                     </ul>
+                                        <button
+                                            style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                            onclick="window.location.href='tel:8197778343'">
+                                            BOOK NOW
+                                        </button>
+                                    </p>
+                                    <script>
+                                        // Show description when any image in the slider is clicked
+                                        document.querySelectorAll('#2bhk-semi-slider img').forEach(function (img) {
+                                            img.addEventListener('click', function () {
+                                                document.getElementById('desc-2bhk-semi').style.display = 'block';
+                                            });
+                                        });
+                                    </script>
+                            
                                 </div>
+                                
                             </div>
                         </li>
                         <li>
@@ -759,11 +765,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </li>
                                 </ul>
                                 <div class="card-content" style="text-align: center;">
-                                    <div class="card-price">
+                                    <!--div class="card-price">
                                         <strong>1BHK FullyFurnished</strong>
-                                    </div>
+                                    </div>-->
                                     <h3 class="h3 card-title">
-                                        Nice New Apartment
+                                        1BHK Fully Furnished flat near Kadugodi, Seegehalli, Bangalore for rent 
                                     </h3>
                                     <p class="card-text" id="desc-1bhk-fur" style="display: none; text-align: center;">
                                         <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
@@ -783,24 +789,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             Security: 24/7 CCTV & security guards.<br>
                                             Power Backup: Yes.<br>
                                         </span>
-                                        <button
-                                            style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
-                                            onclick="window.location.href='tel:8197778343'">
-                                            BOOK NOW
-                                        </button>
-                                    </p>
-                                    <script>
-                                        // Show description when any image in the slider is clicked
-                                        document.querySelectorAll('#1bhk-fur-slider img').forEach(function (img) {
-                                            img.addEventListener('click', function () {
-                                                document.getElementById('desc-1bhk-fur').style.display = 'block';
-                                            });
-                                        });
-                                    </script>
-                            
-                                </div>
-                                <div class="card-footer">
-                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-1bhk-fur" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                        <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-1bhk-fur" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
                                         <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
                                         <span>Nearby Locations</span>
                                         <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
@@ -915,14 +904,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <strong>WORSHIP</strong>
                                             </button>
                                             <ul id="worship-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
-                                                <li style="padding:4px 0;"><strong>Hanuman Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1
-                                                        km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Sri Venugopala Swamy / Sri Veeranjaneya Swamy Temple</strong> <small
-                                                        style="color:#666;margin-left:.5rem;">(0.30 km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Abayahastha Anjaneya Temple</strong> <small
-                                                        style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small
-                                                        style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hanuman Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Venugopala Swamy / Sri Veeranjaneya Swamy Temple</strong> <small style="color:#666;margin-left:.5rem;">(0.30 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Abayahastha Anjaneya Temple</strong> <small style="color:#666;margin-left:.5rem;">(2.1 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
                                             </ul>
                                         </li>
                                         
@@ -934,16 +919,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <strong>AREA</strong>
                                             </button>
                                             <ul id="area-1bhk" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
-                                                <li style="padding:4px 0;"><strong>Belathur</strong> <small style="color:#666;margin-left:.5rem;">(2.0
-                                                        km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(3.4
-                                                        km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Kanmangala</strong> <small style="color:#666;margin-left:.5rem;">(2.6
-                                                        km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Chikkabanahalli</strong> <small style="color:#666;margin-left:.5rem;">(2.9
-                                                        km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Hope Farm Bus Stop</strong> <small style="color:#666;margin-left:.5rem;">(4.1
-                                                        km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Belathur</strong> <small style="color:#666;margin-left:.5rem;">(2.0 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kadugodi</strong> <small style="color:#666;margin-left:.5rem;">(3.4 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Kanmangala</strong> <small style="color:#666;margin-left:.5rem;">(2.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Chikkabanahalli</strong> <small style="color:#666;margin-left:.5rem;">(2.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Hope Farm Bus Stop</strong> <small style="color:#666;margin-left:.5rem;">(4.1 km)</small></li>
                                             </ul>
                                         </li>
 
@@ -961,46 +941,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <li style="padding:4px 0;"><strong>MVJ College of Engineering</strong> <small style="color:#666;margin-left:.5rem;">(4.9 km)</small></li>
                                             </ul>
                                         </li>
-
-                                        
                                     </ul>
-
+                                        <button
+                                            style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                            onclick="window.location.href='tel:8197778343'">
+                                            BOOK NOW
+                                        </button>
+                                    </p>
                                     <script>
-                                        function toggleNearby(e) {
-                                            const btn = e.currentTarget;
-                                            const id = btn.getAttribute('aria-controls');
-                                            const list = document.getElementById(id);
-                                            const expanded = btn.getAttribute('aria-expanded') === 'true';
-                                            btn.setAttribute('aria-expanded', String(!expanded));
-                                            list.hidden = expanded;
-
-                                            // Update chevron direction on the main button
-                                            const chevrons = btn.querySelectorAll('ion-icon[name*="chevron"]');
-                                            if (chevrons.length) {
-                                                // last chevron is the down/up icon
-                                                const mainChevron = chevrons[chevrons.length - 1];
-                                                mainChevron.setAttribute('name', expanded ? 'chevron-down-outline' : 'chevron-up-outline');
-                                            }
-                                        }
-
-                                        function toggleCategory(categoryId, event) {
-                                            const categoryList = document.getElementById(categoryId);
-                                            const categoryBtn = event.currentTarget;
-                                            const chevron = categoryBtn.querySelector('ion-icon');
-
-                                            const isHidden = categoryList.style.display === 'none' || categoryList.style.display === '';
-                                            if (isHidden) {
-                                                categoryList.style.display = 'block';
-                                                categoryBtn.setAttribute('aria-expanded', 'true');
-                                                if (chevron) chevron.style.transform = 'rotate(90deg)';
-                                            } else {
-                                                categoryList.style.display = 'none';
-                                                categoryBtn.setAttribute('aria-expanded', 'false');
-                                                if (chevron) chevron.style.transform = 'rotate(0deg)';
-                                            }
-                                        }
+                                        // Show description when any image in the slider is clicked
+                                        document.querySelectorAll('#1bhk-fur-slider img').forEach(function (img) {
+                                            img.addEventListener('click', function () {
+                                                document.getElementById('desc-1bhk-fur').style.display = 'block';
+                                            });
+                                        });
                                     </script>
+                            
                                 </div>
+                               
                             </div>
                         </li>
                         <li>
@@ -1017,6 +975,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 cursor: pointer;
                                                 transition: box-shadow 0.2s;
                                             }
+                            
                                             .clickable-slide:hover {
                                                 box-shadow: 0 0 0 3px #007bff;
                                                 opacity: 0.92;
@@ -1052,11 +1011,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </li>
                                 </ul>
                                 <div class="card-content" style="text-align: center;">
-                                    <div class="card-price">
+                                    <!--<div class="card-price">
                                         <strong>1BHK Semi-Furnished</strong>
-                                    </div>
+                                    </div>-->
                                     <h3 class="h3 card-title">
-                                        Nice New Apartment
+                                        1BHK Home semi furnished for rent nearby to Kadugodi, seegehalli. 
                                     </h3>
                                     <p class="card-text" id="desc-1bhk-semi" style="display: none; text-align: center;">
                                         <span style="display: block; font-weight: bold; text-align: left; line-height: 1.7;">
@@ -1069,23 +1028,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             Parking space for bike and car.<br>
                                             Balcony with good ventilation and sunlight.<br>
                                         </span>
-                                        <button style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
-                                            onclick="window.location.href='tel:8197778343'">
-                                            BOOK NOW
-                                        </button>
-                                    </p>
-                                    <script>
-                                        // Show description when any image in the slider is clicked
-                                        document.querySelectorAll('#1bhk-semi-slider img').forEach(function(img) {
-                                            img.addEventListener('click', function() {
-                                                document.getElementById('desc-1bhk-semi').style.display = 'block';
-                                            });
-                                        });
-                                    </script>
-                                   
-                                </div>
-                                <div class="card-footer">
-                                    <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-1bhk-semi" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
+                                        <button class="nearby-toggle" aria-expanded="false" aria-controls="nearby-1bhk-semi" onclick="toggleNearby(event)" style="display:flex;align-items:center;gap:.5rem;border:0;background:transparent;cursor:pointer;color:inherit;padding:8px 12px;border-radius:6px;">
                                         <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
                                         <span>Nearby Locations</span>
                                         <ion-icon name="chevron-down-outline" aria-hidden="true" style="margin-left:6px;"></ion-icon>
@@ -1163,11 +1106,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <strong>BUSINESS CENTRES</strong>
                                             </button>
                                             <ul id="business-1bhk-semi" style="list-style:none;padding:6px 0 0 0;margin:6px 0 0 20px;display:none;">
-                                                <li style="padding:4px 0;"><strong>Sumadhura Capital Towers</strong> <small style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
-                                                <li style="padding:4px 0;"><strong>ITPB</strong> <small style="color:#666;margin-left:.5rem;">(5.8 km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Sigma Soft Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.8 km)</small></li>
-                                                <li style="padding:4px 0;"><strong>First Technology Space</strong> <small style="color:#666;margin-left:.5rem;">(6.7 km)</small></li>
-                                                <li style="padding:4px 0;"><strong>Prestige Featherlite Tech Park</strong> <small style="color:#666;margin-left:.5rem;">(7.9 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Sumadhura Capital Towers</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(4.6 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>ITPB</strong> <small style="color:#666;margin-left:.5rem;">(5.8 km)</small>
+                                                </li>
+                                                <li style="padding:4px 0;"><strong>Sigma Soft Tech Park</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(7.8 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>First Technology Space</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(6.7 km)</small></li>
+                                                <li style="padding:4px 0;"><strong>Prestige Featherlite Tech Park</strong> <small
+                                                        style="color:#666;margin-left:.5rem;">(7.9 km)</small></li>
                                             </ul>
                                         </li>
 
@@ -1197,7 +1145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <li style="padding:4px 0;"><strong>Sri Renuka Yellamma Temple</strong> <small style="color:#666;margin-left:.5rem;">(1.1 km)</small></li>
                                             </ul>
                                         </li>
-
+                                        
                                         <!-- AREA -->
                                         <li style="padding:6px 0;">
                                             <button onclick="toggleCategory('area-1bhk-semi', event)" style="background:none;border:none;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:8px;font-weight:bold;color:inherit;width:100%;text-align:left;">
@@ -1228,7 +1176,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </ul>
                                         </li>
                                     </ul>
+                                        <button style="margin-top: 16px; display: inline-block; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+                                            onclick="window.location.href='tel:8197778343'">
+                                            BOOK NOW
+                                        </button>
+                                    </p>
+                                    <script>
+                                        // Show description when any image in the slider is clicked
+                                        document.querySelectorAll('#1bhk-semi-slider img').forEach(function (img) {
+                                            img.addEventListener('click', function () {
+                                                document.getElementById('desc-1bhk-semi').style.display = 'block';
+                                            });
+                                        });
+                                    </script>
+                                   
                                 </div>
+                                
                             </div>
                         </li>
                     </ul>
@@ -1374,6 +1337,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li>
                             <a href="https://www.instagram.com/eazemyrentbng/#" class="social-link">
                                 <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/918197778343?text=Hi%20there%2C%20I%27m%20interested%20in%20a%20rental"
+   target="_blank" rel="noopener" class="social-link">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
                             </a>
                         </li>
                     </ul>

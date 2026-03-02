@@ -65,7 +65,7 @@
    * spacing
    */
 
-  --section-padding: 100px;
+  --section-padding: 40px; /* reduced from 100px */
 
   /**
    * shadow
@@ -500,20 +500,31 @@ button, a { transition: var(--transition); }
 .hero-content { margin-bottom: 60px; }
 
 .hero-subtitle {
+  /* reuse the same styling as section-subtitle but keep flex layout
+     so an icon can appear before the text */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; /* center like other section subtitles */
   align-items: center;
   gap: 5px;
   margin-bottom: 20px;
+
+  color: var(--orange-soda);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  padding: 5px 20px;
+  background: hsla(9, 100%, 62%, 0.1);
+  width: max-content;
+  border-radius: 50px;
+  margin-inline: auto;
 }
 
 .hero-subtitle ion-icon { color: var(--orange-soda); }
 
 .hero-subtitle span {
+  /* keep the inner text dark for contrast with icon */
   color: var(--dark-jungle-green);
-  font-size: var(--fs-5);
-  font-weight: var(--fw-700);
 }
+
 
 .hero-title { margin-bottom: 20px; }
 
@@ -665,19 +676,28 @@ button, a { transition: var(--transition); }
   padding-block: var(--section-padding);
 }
 
+/* mirror the layout used by features-list for consistent sizing */
 .service-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 50px 20px; /* horizontal / vertical gap similar to features */
 }
 
 .service-card {
   position: relative;
   background: var(--white);
-  text-align: center;
-  padding: 40px 30px;
+  /* make the card a flexible box like features-card so height stays consistent */
+  padding: 40px 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;              /* fill the li wrapper height */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   box-shadow: var(--shadow-2);
+  text-align: center;
 }
 
 .service-card .card-icon {
@@ -1295,7 +1315,9 @@ button, a { transition: var(--transition); }
    * SERVICE
    */
 
-  .service-list > li { width: calc(50% - 15px); }
+    /* match features-list spacing logic: subtract half the horizontal gap
+      (50px total gap => 25px between two items, so 12.5 each ~ 10px) */
+    .service-list > li { width: calc(50% - 10px); }
 
 
 
@@ -1539,6 +1561,29 @@ button, a { transition: var(--transition); }
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+
+  /* make about section layout mirror hero (two-column grid) */
+  .about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px; /* space between text and image */
+  }
+
+  /* on smaller screens we want the text block centred above the image
+     just like the hero does by default when grid collapses */
+  @media (max-width: 768px) {
+    .hero .container,
+    .about .container {
+      display: block;
+      text-align: center;
+    }
+
+    .hero .container .hero-banner,
+    .about .container .hero-banner {
+      margin-top: 30px; /* give some breathing room under the text */
+    }
   }
 
 
