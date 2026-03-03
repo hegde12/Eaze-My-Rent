@@ -173,11 +173,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <!-- banner image mimics home hero layout -->
                     <figure class="hero-banner about-banner">
-                    <img src="./assets/images/Building/Building.png" alt="House interior" class="w-100 desktop-only">
+                    <img src="./assets/images/Building/Building.png" alt="House interior" class="w-100 desktop-only" style="display:none;">
                     <style>
-                        @media (max-width: 767px) {
+                        /* hide by default (fastest for mobile) and only show on desktop */
+                        .desktop-only {
+                            display: none !important;
+                        }
+                        @media (min-width: 768px) {
                             .desktop-only {
-                                display: none !important;
+                                display: block !important;
                             }
                         }
                     </style>
