@@ -1808,3 +1808,10 @@ button, a { transition: var(--transition); }
   .footer-link-box { flex-basis: 700px; }
 
 }
+
+/* Desktop-only display for images */
+.desktop-only { display: none; }
+
+@media (min-width: 1000px) {
+  .desktop-only { display: block; }
+}
