@@ -89,3 +89,23 @@ function toggleNearby(event) {
     if (chevronIcon) chevronIcon.setAttribute('name', 'chevron-down-outline');
   }
 }
+
+/**
+ * Toggle category list
+ */
+function toggleCategory(categoryId, event) {
+  event.preventDefault();
+  const targetList = document.getElementById(categoryId);
+  const button = event.currentTarget;
+  const chevronIcon = button.querySelector('ion-icon[name*="chevron"]');
+  
+  if (!targetList) return;
+  
+  if (targetList.style.display === 'none') {
+    targetList.style.display = 'block';
+    if (chevronIcon) chevronIcon.style.transform = 'rotate(90deg)';
+  } else {
+    targetList.style.display = 'none';
+    if (chevronIcon) chevronIcon.style.transform = 'rotate(0deg)';
+  }
+}
