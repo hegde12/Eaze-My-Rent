@@ -1571,13 +1571,15 @@ button[onclick*="window.open('https://wa.me/918197778343', '_blank')"] {
     align-items: center;
   }
 
-  .hero-banner {
+  .hero-banner,
+  .about-banner {
     justify-self: end;
   }
 
-  .hero-banner img.hero-img {
-    width: 550px;
-    height: 457.7px;
+  .hero-banner img.hero-img,
+  .about-banner > img {
+    width: 440px;
+    height: 457.4px;
     object-fit: cover;
   }
 
