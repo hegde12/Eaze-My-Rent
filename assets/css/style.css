@@ -200,6 +200,14 @@ button, a { transition: var(--transition); }
 
 .btn:is(:hover, :focus)::before { width: 100%; }
 
+button[onclick*="window.location.href='tel:8197778343'"],
+button[onclick*="window.open('https://wa.me/918197778343', '_blank')"] {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
 .w-100 { width: 100%; }
 
 .section-subtitle {
@@ -1561,6 +1569,16 @@ button, a { transition: var(--transition); }
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+
+  .hero-banner {
+    justify-self: end;
+  }
+
+  .hero-banner img.hero-img {
+    width: 440px;
+    height: 457.7px;
+    object-fit: cover;
   }
 
   /* make about section layout mirror hero (two-column grid) */
